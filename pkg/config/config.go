@@ -92,8 +92,8 @@ func NewMicroshiftConfig() *MicroshiftConfig {
 	return &MicroshiftConfig{
 		ConfigFile:  findConfigFile(),
 		DataDir:     dataDir,
-		AuditLogDir: "",
-		LogVLevel:   0,
+		AuditLogDir: "/tmp",
+		LogVLevel:   10,
 		Roles:       defaultRoles,
 		NodeName:    nodeName,
 		NodeIP:      nodeIP,
